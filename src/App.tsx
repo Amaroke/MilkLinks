@@ -27,6 +27,10 @@ const extensions: Link[] = [
     url: "https://greasyfork.org/en/scripts/531374-mwi-qol-profile-on-avatar?locale_override=1",
   },
   {
+    label: "Hit Tracker",
+    url: "https://greasyfork.org/en/scripts/535181-mwi-hit-tracker",
+  },
+  {
     label: "Hide Full Party",
     url: "extension://iikmkjmpaadaobahmlepeloendndfphd/ask.html?aid=240048fa-5e6a-4402-94a6-70005fdb4b32",
   },
@@ -57,10 +61,18 @@ const guides: Link[] = [
 
 const tools: Link[] = [
   {
-    label: "Combat Simulator",
+    label: "Combat Simulator (shykai)",
+    url: "https://shykai.github.io/MWICombatSimulatorTest/dist/",
+  },
+  {
+    label: "Combat Simulator (amvoid) ",
     url: "https://amvoidguy.github.io/MWICombatSimulatorTest/dist/index.html",
   },
   { label: "Profit Calculator", url: "https://mwisim.github.io/cowculator/" },
+  {
+    label: "Alchemy Calculator",
+    url: "https://milkonomy.pages.dev/#/dashboard",
+  },
 ];
 
 const otherLinks: Link[] = [
