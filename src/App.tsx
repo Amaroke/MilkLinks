@@ -42,10 +42,6 @@ const extensions: Link[] = [
     label: "Tasklist",
     url: "https://greasyfork.org/en/scripts/531418-milky-way-idle-tasklist",
   },
-  {
-    label: "Guild XP",
-    url: "https://greasyfork.org/en/scripts/531792-guild-xp-h",
-  },
 ];
 
 const guides: Link[] = [
@@ -61,16 +57,11 @@ const guides: Link[] = [
 
 const tools: Link[] = [
   {
-    label: "Combat Simulator (shykai)",
+    label: "Combat Simulator",
     url: "https://shykai.github.io/MWICombatSimulatorTest/dist/",
   },
   {
-    label: "Combat Simulator (amvoid) ",
-    url: "https://amvoidguy.github.io/MWICombatSimulatorTest/dist/index.html",
-  },
-  { label: "Profit Calculator", url: "https://mwisim.github.io/cowculator/" },
-  {
-    label: "Alchemy Calculator",
+    label: "Profit Calculator",
     url: "https://milkonomy.pages.dev/#/dashboard",
   },
 ];
@@ -111,9 +102,9 @@ const Section: React.FC<{ title: string; links: Link[] }> = ({
   title,
   links,
 }) => (
-  <section className="w-full max-w-md mb-8 flex flex-col items-center">
+  <section className="w-full max-w-md flex flex-col items-center">
     <h2 className="text-2xl font-bold mb-4 drop-shadow-md">{title}</h2>
-    <div className="flex flex-col items-center gap-3 w-full">
+    <div className="flex flex-col items-center gap-2 w-full">
       {links.map((link, i) => (
         <LinkButton key={i} {...link} />
       ))}
@@ -137,15 +128,23 @@ const App: React.FC = () => {
         backgroundBlendMode: "overlay",
       }}
     >
-      <h1 className="text-4xl font-extrabold mb-10 tracking-wide drop-shadow-md text-center">
+      <h1 className="text-4xl font-extrabold mb-2 tracking-wide drop-shadow-md text-center">
         MWLinks
       </h1>
+      <p className="text-lg text-gray-300 mb-5 text-center">
+        Only the best and fully working solutions
+      </p>
 
-      <div className="w-full max-w-lg flex flex-col items-center gap-8">
-        <Section title="Extensions" links={extensions} />
-        <Section title="Guides" links={guides} />
-        <Section title="Tools" links={tools} />
-        <Section title="Other Links" links={otherLinks} />
+      <div className="w-full max-w-5xl flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-12">
+        <div className="flex-1 flex flex-col items-center gap-8">
+          <Section title="Extensions" links={extensions} />
+        </div>
+
+        <div className="flex-1 flex flex-col items-center gap-8">
+          <Section title="Guides" links={guides} />
+          <Section title="Tools" links={tools} />
+          <Section title="Other Links" links={otherLinks} />
+        </div>
       </div>
     </div>
   );
