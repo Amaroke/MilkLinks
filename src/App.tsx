@@ -35,6 +35,10 @@ const extensions: Link[] = [
     url: "extension://iikmkjmpaadaobahmlepeloendndfphd/ask.html?aid=240048fa-5e6a-4402-94a6-70005fdb4b32",
   },
   {
+    label: "Quick sell/buy buttons",
+    url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
+  },
+  {
     label: "Task Manager",
     url: "https://greasyfork.org/zh-CN/scripts/509720-mwi-taskmanager",
   },
