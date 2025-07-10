@@ -12,11 +12,11 @@ const extensions: Link[] = [
   },
   {
     label: "MWI Tools for Steam",
-    url: "https://raw.githubusercontent.com/YangLeda/Userscripts-For-MilkyWayIdle/refs/heads/main/MWITools%20addon%20for%20Steam%20version.js",
+    url: "https://greasyfork.org/en/scripts/497410-mwitools-addon-for-steam-version",
   },
   {
-    label: "Better UI (Custom Styles)",
-    url: "https://github.com/AJman14/MWI-Extensions/blob/Extensions/Custom%20Styles/Custom%20Styles%20-%201.1.0.css- Better UI",
+    label: "Custom Styles",
+    url: "https://github.com/AJman14/MWI-Extensions/tree/Extensions/Custom%20Styles",
   },
   {
     label: "Skill Requirements",
@@ -32,10 +32,10 @@ const extensions: Link[] = [
   },
   {
     label: "Hide Full Party",
-    url: "extension://iikmkjmpaadaobahmlepeloendndfphd/ask.html?aid=240048fa-5e6a-4402-94a6-70005fdb4b32",
+    url: "https://greasyfork.org/eo/scripts/531074-mwi-qol-hide-full-partys",
   },
   {
-    label: "Quick sell/buy buttons",
+    label: "Quick Sell/Buy",
     url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
   },
   {
@@ -133,7 +133,7 @@ const App: React.FC = () => {
       }}
     >
       <h1 className="text-4xl font-extrabold mb-2 tracking-wide drop-shadow-md text-center">
-        MWLinks
+        MilkLinks
       </h1>
       <p className="text-lg text-gray-300 mb-5 text-center">
         Only the best and fully working solutions
