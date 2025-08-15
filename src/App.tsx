@@ -37,14 +37,13 @@ const App: React.FC = () => (
     className="min-h-screen bg-cover bg-center"
     style={{ backgroundImage: `url(${bgImage})` }}
   >
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-2 text-gray-300">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-2 text-white">
       <h1 className="text-4xl font-extrabold mb-2 tracking-wide drop-shadow-md text-center">
         MilkLinks
       </h1>
-      <p className="text-lg text-gray-300 mb-5 text-center">
+      <p className="text-lg text-white mb-5 text-center">
         Only the best and fully working solutions
       </p>
-
       <div className="w-full max-w-5xl flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-12">
         <div className="flex-1 flex flex-col items-center gap-8">
           <Section title="Extensions" links={extensions} />
@@ -52,10 +51,20 @@ const App: React.FC = () => (
         <div className="flex-1 flex flex-col items-center gap-8 md:gap-4">
           <Section title="Guides" links={guides} />
           <Section title="Tools" links={tools} />
-          <Section title="Others Links" links={otherLinks} />
+          <Section title="Other Links" links={otherLinks} />
         </div>
       </div>
     </div>
+    <footer className="fixed bottom-0 right-0 bg-white opacity-70 text-purple-800 text-xs px-2 py-1 rounded-tl-md">
+      <a
+        href="https://github.com/Amaroke"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="no-underline flex items-center gap-1"
+      >
+        Made by <span className="font-bold">Amaroke</span>
+      </a>
+    </footer>
   </div>
 );
 
