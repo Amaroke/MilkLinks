@@ -55,16 +55,6 @@ const App: React.FC = () => (
         </div>
       </div>
     </div>
-    <footer className="fixed bottom-0 right-0 bg-white opacity-70 text-purple-800 text-xs px-2 py-1 rounded-tl-md">
-      <a
-        href="https://github.com/Amaroke"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="no-underline flex items-center gap-1"
-      >
-        Made by <span className="font-bold">Amaroke</span>
-      </a>
-    </footer>
   </div>
 );
 
