@@ -1,6 +1,5 @@
 import React from "react";
 import { extensions, guides, tools, otherLinks } from "./data/links";
-import bgImage from "./assets/background.jpg";
 
 type Link = {
   label: string;
@@ -12,7 +11,7 @@ const LinkButton: React.FC<Link> = ({ label, url }) => (
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="w-full max-w-sm text-center bg-gradient-to-r from-purple-700 via-blue-800 to-indigo-900 text-white py-2.5 rounded-md text-lg font-semibold shadow-md hover:from-purple-500 hover:via-blue-600 hover:to-indigo-700 transition-all duration-300 filter brightness-105 hover:brightness-125 focus:outline-none focus:ring-3 focus:ring-purple-500/60"
+    className="w-full max-w-sm text-center bg-linear-to-r from-indigo-800 via-blue-700 to-blue-500 text-white py-2.5 rounded-md text-lg font-semibold shadow-lg hover:from-indigo-700 hover:via-blue-600 hover:to-blue-400 transition-all duration-300 brightness-105 hover:brightness-125 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-400/70"
   >
     {label}
   </a>
@@ -33,10 +32,7 @@ const Section: React.FC<{ title: string; links: Link[] }> = ({
 );
 
 const App: React.FC = () => (
-  <div
-    className="min-h-screen bg-cover bg-center"
-    style={{ backgroundImage: `url(${bgImage})` }}
-  >
+  <div className="min-h-screen bg-[#131c37] bg-[url('/src/assets/background.svg')] bg-cover bg-center">
     <div className="min-h-screen flex flex-col items-center justify-center px-6 py-2 text-white">
       <h1 className="text-4xl font-extrabold mb-2 tracking-wide drop-shadow-md text-center">
         MilkLinks

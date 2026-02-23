@@ -9,40 +9,36 @@ export const extensions: Link[] = [
     url: "https://greasyfork.org/en/scripts/494467-mwitools",
   },
   {
+    label: "MWI Tools for Steam",
+    url: "https://greasyfork.org/en/scripts/497410-mwitools-addon-for-steam-version",
+  },
+  {
+    label: "Toolasha",
+    url: "https://greasyfork.org/en/scripts/562662-toolasha/post-install",
+  },
+  {
+    label: "Toolasha for Steam",
+    url: "https://github.com/Celasha/Toolasha/releases/latest/download/Toolasha.steam.js",
+  },
+  {
     label: "Custom Styles",
     url: "https://raw.githubusercontent.com/AJman14/MWI-Extensions/refs/heads/Extensions/Custom%20Styles/Custom%20Styles%20-%203.0.0.css",
+  },
+  {
+    label: "Quick Sell & Buy",
+    url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
+  },
+  {
+    label: "Lab Room Success Calculator",
+    url: "https://greasyfork.org/en/scripts/567056-mwi-lab-room-success-calculator/post-install",
   },
   {
     label: "Hit Tracker",
     url: "https://greasyfork.org/en/scripts/535181-mwi-hit-tracker",
   },
   {
-    label: "Quick Sell/Buy",
-    url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
-  },
-  {
-    label: "Skill Requirements",
-    url: "https://greasyfork.org/en/scripts/530719-mwi-qol-skill-requirement?locale_override=1",
-  },
-  {
-    label: "Profile on Avatar",
-    url: "https://greasyfork.org/en/scripts/531374-mwi-qol-profile-on-avatar?locale_override=1",
-  },
-  {
-    label: "Hide Full Party",
-    url: "https://greasyfork.org/eo/scripts/531074-mwi-qol-hide-full-partys",
-  },
-  {
-    label: "Task Manager",
-    url: "https://greasyfork.org/zh-CN/scripts/509720-mwi-taskmanager",
-  },
-  {
-    label: "Tasklist",
-    url: "https://greasyfork.org/en/scripts/531418-milky-way-idle-tasklist",
-  },
-  {
-    label: "MWI Tools for Steam",
-    url: "https://greasyfork.org/en/scripts/497410-mwitools-addon-for-steam-version",
+    label: "Character Card",
+    url: "https://greasyfork.org/en/scripts/543862-mwi%E8%A7%92%E8%89%B2%E5%90%8D%E7%89%87%E6%8F%92%E4%BB%B6",
   },
 ];
 
@@ -52,12 +48,12 @@ export const guides: Link[] = [
     url: "https://milkywayidle.wiki.gg/wiki/Milkyway_Idle_Beginner%E2%80%99s_Guide",
   },
   {
-    label: "Iron Cow Walkthrough",
-    url: "https://docs.google.com/document/d/1daTEF-OTRMkYwv_7qQj-ebU1hzvk8aKCXI6ZpslnBoE/edit?tab=t.0",
-  },
-  {
     label: "Best Party Composition",
     url: "https://milkywayidle.wiki.gg/wiki/Best_Party_composition",
+  },
+  {
+    label: "Iron Cow Walkthrough",
+    url: "https://docs.google.com/document/d/1daTEF-OTRMkYwv_7qQj-ebU1hzvk8aKCXI6ZpslnBoE/edit?tab=t.0",
   },
 ];
 
