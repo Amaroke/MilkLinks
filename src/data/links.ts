@@ -13,24 +13,12 @@ export const extensions: Link[] = [
     url: "https://greasyfork.org/en/scripts/497410-mwitools-addon-for-steam-version",
   },
   {
-    label: "Toolasha",
-    url: "https://greasyfork.org/en/scripts/562662-toolasha/post-install",
-  },
-  {
-    label: "Toolasha for Steam",
-    url: "https://github.com/Celasha/Toolasha/releases/latest/download/Toolasha.steam.js",
-  },
-  {
     label: "Custom Styles",
     url: "https://raw.githubusercontent.com/AJman14/MWI-Extensions/refs/heads/Extensions/Custom%20Styles/Custom%20Styles%20-%203.0.0.css",
   },
   {
     label: "Quick Sell & Buy",
     url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
-  },
-  {
-    label: "Lab Room Success Calculator",
-    url: "https://greasyfork.org/en/scripts/567056-mwi-lab-room-success-calculator/post-install",
   },
   {
     label: "Hit Tracker",
