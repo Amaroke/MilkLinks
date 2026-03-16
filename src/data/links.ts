@@ -24,10 +24,6 @@ export const extensions: Link[] = [
     label: "Hit Tracker",
     url: "https://greasyfork.org/en/scripts/535181-mwi-hit-tracker",
   },
-  {
-    label: "Character Card",
-    url: "https://greasyfork.org/en/scripts/543862-mwi%E8%A7%92%E8%89%B2%E5%90%8D%E7%89%87%E6%8F%92%E4%BB%B6",
-  },
 ];
 
 export const guides: Link[] = [
