@@ -123,7 +123,8 @@ const App = () => (
         MilkLinks
       </h1>
       <p className="text-lg text-white mb-5 text-center">
-        Only the best and fully working solutions
+        Only the best and truly useful solutions I actually use. Feel free to
+        contact me if you think a solution deserves to be added.
       </p>
       <div className="w-full max-w-5xl flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-12">
         <div className="flex-1 flex flex-col items-center gap-8">

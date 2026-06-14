@@ -13,20 +13,16 @@ export const extensions: Link[] = [
     url: "https://greasyfork.org/en/scripts/497410-mwitools-addon-for-steam-version",
   },
   {
-    label: "Custom Styles",
-    url: "https://raw.githubusercontent.com/AJman14/MWI-Extensions/refs/heads/Extensions/Custom%20Styles/Custom%20Styles%20-%203.0.0.css",
-  },
-  {
     label: "Quick Sell & Buy",
     url: "https://greasyfork.org/en/scripts/538920-buy-sell-shortcuts",
   },
   {
-    label: "Quick Switch & Favorites",
-    url: "https://greasyfork.org/en/scripts/531682-%E9%93%B6%E6%B2%B3%E5%A5%B6%E7%89%9B-%E4%BB%93%E5%BA%93%E7%89%A9%E5%93%81%E6%94%B6%E8%97%8F%E5%92%8C%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E8%A7%92%E8%89%B2/post-install",
-  },
-  {
     label: "Hit Tracker",
     url: "https://greasyfork.org/en/scripts/535181-mwi-hit-tracker",
+  },
+  {
+    label: "Lab Room Success Calculator",
+    url: "https://greasyfork.org/en/scripts/567056-mwi-lab-room-success-calculator",
   },
 ];
 
