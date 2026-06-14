@@ -51,7 +51,10 @@ const SplitLinkButton = ({ label, url }: Link) => {
       await navigator.clipboard.writeText(url);
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
-    } catch {}
+    } catch {
+      // clipboard unavailable or permission denied
+      console.error("Failed to copy the link to clipboard.");
+    }
   };
 
   return (
