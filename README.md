@@ -1,3 +1,3 @@
 # MilkLinks
 
-**MilkLinks** est une application web dédiée à la centralisation de liens utiles pour le jeu **Milky Way Idle**. Elle regroupe des liens vers des extensions, des guides et autres outils communautaires.
+**MilkLinks** is a web application dedicated to centralizing useful links for the game Milky Way Idle. It includes links to expansions, guides, and other community tools.
