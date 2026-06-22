@@ -118,7 +118,7 @@ const App = () => (
     className="min-h-screen bg-[#131c37] bg-cover bg-center"
     style={{ backgroundImage: `url(${backgroundSvg})` }}
   >
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-2 text-white">
+    <main className="min-h-screen flex flex-col items-center justify-center px-6 py-2 text-white">
       <h1 className="text-4xl font-extrabold mb-2 tracking-wide drop-shadow-md text-center">
         MilkLinks
       </h1>
@@ -137,7 +137,7 @@ const App = () => (
           <Section title="Other Links" links={otherLinks} />
         </div>
       </div>
-    </div>
+    </main>
   </div>
 );
 
