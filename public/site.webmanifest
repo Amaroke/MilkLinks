@@ -1,0 +1,19 @@
+{
+  "name": "MilkLinks — Milky Way Idle Tools, Extensions & Guides",
+  "short_name": "MilkLinks",
+  "description": "The best and truly useful Milky Way Idle (MWI) resources in one place: extensions, userscripts, guides, calculators, and community tools.",
+  "start_url": "/MilkLinks/",
+  "scope": "/MilkLinks/",
+  "display": "standalone",
+  "background_color": "#131c37",
+  "theme_color": "#131c37",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/MilkLinks/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
