@@ -41,12 +41,6 @@ export const tools: Link[] = [
     description: "Simulate fights to test a build before committing gear.",
   },
   {
-    label: "Combat Simulator (Alt)",
-    url: "https://combat.43.167.210.211.sslip.io/combat/setup",
-    description:
-      "Finds your best gear upgrade, optimal ability setup and trigger ranges.",
-  },
-  {
     label: "Profit Calculator",
     url: "https://milkonomy.pages.dev/#/dashboard",
     description: "Crafting and gathering profitability calculator.",
