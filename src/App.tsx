@@ -1,14 +1,13 @@
 import { useState } from "react";
-import { extensions, guides, tools, otherLinks } from "./data/links";
+import {
+  extensions,
+  guides,
+  tools,
+  otherLinks,
+  androidLinks,
+} from "./data/links";
 import type { Link } from "./data/links";
 import backgroundSvg from "./assets/background.svg";
-
-const androidLinks: Link[] = [
-  {
-    label: "Unofficial Android App",
-    url: "https://github.com/McPeyen/Unofficial-Milky-Way-Idle-for-Android",
-  },
-];
 
 const CopyIcon = () => (
   <svg
@@ -43,7 +42,7 @@ const CheckIcon = () => (
   </svg>
 );
 
-const SplitLinkButton = ({ label, url }: Link) => {
+const SplitLinkButton = ({ label, url, description }: Link) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -58,36 +57,46 @@ const SplitLinkButton = ({ label, url }: Link) => {
   };
 
   return (
-    <div className="w-full max-w-sm flex rounded-md overflow-hidden shadow-lg">
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex-1 text-center bg-linear-to-r from-indigo-800 via-blue-700 to-blue-500 text-white py-2.5 text-lg font-semibold hover:from-indigo-700 hover:via-blue-600 hover:to-blue-400 transition-all duration-300 brightness-105 hover:brightness-125 hover:scale-x-[1.01] focus:outline-none focus:ring-2 focus:ring-blue-400/70"
-      >
-        {label}
-      </a>
-      <div className="w-px bg-white/20 shrink-0" />
-      <button
-        onClick={handleCopy}
-        title="Copier le lien"
-        className="shrink-0 px-3 flex items-center justify-center bg-linear-to-r from-blue-500 to-blue-400 text-white hover:from-blue-400 hover:to-blue-300 transition-all duration-300 brightness-105 hover:brightness-125 focus:outline-none focus:ring-2 focus:ring-blue-400/70"
-      >
-        {copied ? <CheckIcon /> : <CopyIcon />}
-      </button>
+    <div className="w-full max-w-sm flex flex-col gap-1">
+      <div className="flex rounded-md overflow-hidden shadow-lg">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 text-center bg-linear-to-r from-indigo-800 via-blue-700 to-blue-500 text-white py-2.5 text-lg font-semibold hover:from-indigo-700 hover:via-blue-600 hover:to-blue-400 transition-all duration-300 brightness-105 hover:brightness-125 hover:scale-x-[1.01] focus:outline-none focus:ring-2 focus:ring-blue-400/70"
+        >
+          {label}
+        </a>
+        <div className="w-px bg-white/20 shrink-0" />
+        <button
+          onClick={handleCopy}
+          title="Copier le lien"
+          className="shrink-0 px-3 flex items-center justify-center bg-linear-to-r from-blue-500 to-blue-400 text-white hover:from-blue-400 hover:to-blue-300 transition-all duration-300 brightness-105 hover:brightness-125 focus:outline-none focus:ring-2 focus:ring-blue-400/70"
+        >
+          {copied ? <CheckIcon /> : <CopyIcon />}
+        </button>
+      </div>
+      {description && (
+        <p className="text-sm text-white/70 text-center px-1">{description}</p>
+      )}
     </div>
   );
 };
 
-const SimpleLinkButton = ({ label, url }: Link) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-full max-w-sm text-center bg-linear-to-r from-indigo-800 via-blue-700 to-blue-500 text-white py-2.5 rounded-md text-lg font-semibold shadow-lg hover:from-indigo-700 hover:via-blue-600 hover:to-blue-400 transition-all duration-300 brightness-105 hover:brightness-125 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-400/70"
-  >
-    {label}
-  </a>
+const SimpleLinkButton = ({ label, url, description }: Link) => (
+  <div className="w-full max-w-sm flex flex-col gap-1">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full text-center bg-linear-to-r from-indigo-800 via-blue-700 to-blue-500 text-white py-2.5 rounded-md text-lg font-semibold shadow-lg hover:from-indigo-700 hover:via-blue-600 hover:to-blue-400 transition-all duration-300 brightness-105 hover:brightness-125 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-400/70"
+    >
+      {label}
+    </a>
+    {description && (
+      <p className="text-sm text-white/70 text-center px-1">{description}</p>
+    )}
+  </div>
 );
 
 const Section = ({
@@ -101,7 +110,7 @@ const Section = ({
 }) => (
   <section className="w-full max-w-md flex flex-col items-center">
     <h2 className="text-2xl font-bold mb-2 drop-shadow-md">{title}</h2>
-    <div className="flex flex-col items-center gap-2 w-full">
+    <div className="flex flex-col items-center gap-4 w-full">
       {links.map((link) =>
         split ? (
           <SplitLinkButton key={link.url} {...link} />
@@ -126,15 +135,17 @@ const App = () => (
         Only the best and truly useful solutions I actually use. Feel free to
         contact me if you think a solution deserves to be added.
       </p>
-      <div className="w-full max-w-5xl flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-12">
+      <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-10">
         <div className="flex-1 flex flex-col items-center gap-8">
           <Section title="Extensions" links={extensions} split />
-          <Section title="Android App" links={androidLinks} />
-        </div>
-        <div className="flex-1 flex flex-col items-center gap-8 md:gap-4">
           <Section title="Guides" links={guides} />
+        </div>
+        <div className="flex-1 flex flex-col items-center gap-8">
           <Section title="Tools" links={tools} />
+        </div>
+        <div className="flex-1 flex flex-col items-center gap-8">
           <Section title="Other Links" links={otherLinks} />
+          <Section title="Android App" links={androidLinks} />
         </div>
       </div>
     </main>
