@@ -51,7 +51,6 @@ const SplitLinkButton = ({ label, url, description }: Link) => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     } catch {
-      // clipboard unavailable or permission denied
       console.error("Failed to copy the link to clipboard.");
     }
   };
@@ -70,7 +69,8 @@ const SplitLinkButton = ({ label, url, description }: Link) => {
         <div className="w-px bg-white/20 shrink-0" />
         <button
           onClick={handleCopy}
-          title="Copier le lien"
+          title="Copy link"
+          aria-label={`Copy ${label} link`}
           className="shrink-0 px-3 flex items-center justify-center bg-linear-to-r from-blue-500 to-blue-400 text-white hover:from-blue-400 hover:to-blue-300 transition-all duration-300 brightness-105 hover:brightness-125 focus:outline-none focus:ring-2 focus:ring-blue-400/70"
         >
           {copied ? <CheckIcon /> : <CopyIcon />}
