@@ -1,6 +1,6 @@
 # MilkLinks
 
-[![Deploy](https://github.com/Amaroke/MilkLinks/actions/workflows/deploy.yml/badge.svg)](https://github.com/Amaroke/MilkLinks/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/Amaroke/MilkLinks/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Amaroke/MilkLinks/actions/workflows/deploy.yml)
 [![PageSpeed](https://img.shields.io/badge/PageSpeed-report-4285F4?logo=googlechrome&logoColor=white)](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Famaroke.github.io%2FMilkLinks%2F)
 
 **MilkLinks** is a web application dedicated to centralizing useful links for the game Milky Way Idle. It includes links to expansions, guides, and other community tools.
